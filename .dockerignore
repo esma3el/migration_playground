@@ -4,6 +4,8 @@
 # For more help, visit the .dockerignore file reference guide at
 # https://docs.docker.com/go/build-context-dockerignore/
 deployment.yaml
+ansilble
+ansilble.pub
 hosts.ini
 **/.DS_Store
 **/__pycache__
