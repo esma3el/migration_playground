@@ -10,4 +10,4 @@ migrate:
 build:
 	ansible-playbook -i hosts.ini deployment.yaml --private-key keys/ansible
 
-deploy:migrate,git,build
+deploy: migrate git build
