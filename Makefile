@@ -19,7 +19,7 @@ migrate:
 prod:
 	ansible-playbook -i hosts.ini prod.yaml --private-key keys/ansible
 
-stage:
+stage: stop
 	ansible-playbook -i inventory_file stage.yaml --private-key keys/ansible
 
 deploy_stage: migrate git stage
