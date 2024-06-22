@@ -1,0 +1,11 @@
+- hosts: servers
+  tasks:
+    - git:
+        repo: https://github.com/esma3el/migration_playground.git
+        dest: "{{ dir_path }}"
+        update: yes
+    - command: docker compose -f {{ dir_path }}/compose.yaml up -d --build --force-recreate
+  vars:
+    ansible_ssh_user: "i.mosa"
+    ansible_sudo_pass: "Ismail@123"
+    dir_path: /home/i.mosa/migrate_play
