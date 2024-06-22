@@ -129,6 +129,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -385,6 +401,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "usermanagemet.migrations.0004_test_dob",
+        "description": "usermanagemet.migrations.0004_test_dob",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('usermanagemet', '0003_test_salary'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='test',\n            name='dob',\n            field=models.DateTimeField(blank=True, null=True),\n        ),",
+        "detail": "usermanagemet.migrations.0004_test_dob",
+        "documentation": {}
+    },
+    {
         "label": "UsermanagemetConfig",
         "kind": 6,
         "importPath": "usermanagemet.apps",
@@ -398,7 +423,7 @@
         "kind": 6,
         "importPath": "usermanagemet.models",
         "description": "usermanagemet.models",
-        "peekOfCode": "class TEST(models.Model):\n    name = models.CharField(max_length=10)\n    age = models.IntegerField()\n    department = models.CharField(max_length=50,null=True,blank=True)\n    salary = models.FloatField(null=True,blank=True)",
+        "peekOfCode": "class TEST(models.Model):\n    name = models.CharField(max_length=10)\n    age = models.IntegerField()\n    department = models.CharField(max_length=50,null=True,blank=True)\n    salary = models.FloatField(null=True,blank=True)\n    dob = models.DateTimeField(null=True,blank=True)",
         "detail": "usermanagemet.models",
         "documentation": {}
     },

@@ -6,3 +6,4 @@ class TEST(models.Model):
     age = models.IntegerField()
     department = models.CharField(max_length=50,null=True,blank=True)
     salary = models.FloatField(null=True,blank=True)
+    dob = models.DateTimeField(null=True,blank=True)
